@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>favorite quotes</title>
+    </head>
+    <body>
+        <h1>I Love Atom and Flask</h1>
+        <h2>{{ quote }}</h2>
+        {% if quote2 %}
+        <h2>{{ quote2 }}</h2>
+        {% else %}
+        <h2>Always Find a Lesson in Every Situation</h2>
+        {% endif %}
+        <br>
+        <h3>Find Us:</h3>
+        {% for city in cities %}
+        <li>{{ city }}</li>
+        {% endfor %}
+    </body>
+</html>
